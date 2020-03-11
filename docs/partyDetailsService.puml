@@ -1,0 +1,51 @@
+@startuml
+actor "Client" as Client
+participant "PartyDetailService" as PDS
+database "Database" as DB
+
+Client -> PDS: Authentication Request
+activate PDS
+PDS --> Client: Authentication Response
+deactivate PDS
+
+Client -> PDS: /POST create a new Party
+activate PDS
+
+PDS -> DB : Insert Party in Database
+activate DB
+
+DB -> PDS : Success with PartyID or Error
+deactivate DB
+
+PDS -> Client: Success or Error with PartyID
+deactivate PDS
+
+''.............................
+
+Client -> PDS: /GET /PUT /DELETE a party with given PartyID
+activate PDS
+
+PDS -> DB : select/update/delete action on DB
+activate DB
+
+DB -> PDS : Success with PartyID or Error
+deactivate DB
+
+PDS -> Client: Success or Error
+deactivate PDS
+
+''............................
+
+Client -> PDS: /POST Add a new address to Party \n
+activate PDS
+
+PDS -> DB : Insert Party in Database
+activate DB
+
+DB -> PDS : Success with PartyID or Error
+deactivate DB
+
+PDS -> Client: Success or Error with PartyID
+deactivate PDS
+''..............................
+@enduml
