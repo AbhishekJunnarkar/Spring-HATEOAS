@@ -1,0 +1,119 @@
+{
+	"id": "b46338cd-beeb-de3a-8098-98ebb5b58d99",
+	"name": "PartydetailsService",
+	"description": "",
+	"order": [
+		"2e6190cc-4901-c550-fb97-17b9185e25e9",
+		"41910c67-7f65-09e4-5ccf-daed4a7926f9",
+		"5554c657-c1c9-6c80-0354-1ae4f68d74ba",
+		"520c3cf5-ad48-6b76-7134-14ef0dc02214"
+	],
+	"folders": [],
+	"timestamp": 1583665627104,
+	"owner": "2034703",
+	"public": false,
+	"requests": [
+		{
+			"id": "2e6190cc-4901-c550-fb97-17b9185e25e9",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:9090/parties",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1583668713730,
+			"name": "localhost:9090/parties",
+			"description": "",
+			"collectionId": "b46338cd-beeb-de3a-8098-98ebb5b58d99",
+			"responses": []
+		},
+		{
+			"id": "41910c67-7f65-09e4-5ccf-daed4a7926f9",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:9090/parties",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1583668718174,
+			"name": "localhost:9090/parties",
+			"description": "",
+			"collectionId": "b46338cd-beeb-de3a-8098-98ebb5b58d99",
+			"responses": [],
+			"rawModeData": "{\n    \"name\": \"Chandrakant\",\n    \"region\": \"Nagpur\",\n    \"status\": \"Inactive\",\n    \"type\": \"C\"\n}\n"
+		},
+		{
+			"id": "520c3cf5-ad48-6b76-7134-14ef0dc02214",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:9090/parties/5",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "b46338cd-beeb-de3a-8098-98ebb5b58d99",
+			"data": null,
+			"dataMode": "params",
+			"name": "localhost:9090/parties/5",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1583668727268,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "5554c657-c1c9-6c80-0354-1ae4f68d74ba",
+			"headers": "Content-type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:9090/parties/3",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1583668721815,
+			"name": "localhost:9090/parties/3",
+			"description": "",
+			"collectionId": "b46338cd-beeb-de3a-8098-98ebb5b58d99",
+			"responses": [],
+			"rawModeData": "{\n        \"name\": \"Chaitanya\",\n        \"region\": \"San Fransisco\",\n        \"status\": \"Active\",\n        \"type\": \"A\"\n}"
+		}
+	]
+}
